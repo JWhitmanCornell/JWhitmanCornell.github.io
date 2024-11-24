@@ -1,1 +1,1 @@
-# JWhitman-Website.github.io
+# JWhitmanCornell.github.io
