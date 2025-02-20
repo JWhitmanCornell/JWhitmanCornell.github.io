@@ -1,0 +1,261 @@
+/* General Styling */
+html{
+    box-sizing:border-box;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    overflow-x:hidden;
+}
+body{
+    margin:0;
+    line-height:1.5;
+    font-size:15px;
+}
+h2{
+    font-size:30px;
+    font-weight:400;
+    margin:10px 0;
+}
+img{
+    border-style:none;
+    vertical-align:middle;
+}
+a {
+    background-color:transparent;
+    color:inherit;
+}
+
+
+/* Styling for the Navigation Bar */
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+    color:white;
+    font-family: 'Glegoo', sans-serif;
+    background-color:rgb(70, 115, 145); 
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
+}
+.navbar .bar{
+    width:100%;
+    display:inline-block;
+}
+.button{
+    border:none;
+    display:inline-block;
+    padding:12px 24px!important;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.button:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    color:#000!important;
+    background-color:#ccc!important;
+}
+
+
+
+/* Styling for Main Content */
+.content{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:2000px;
+    margin-top:46px;
+}
+
+/* Styling for the Hero (Header/Banner) */
+.hero_section{
+    position:relative;
+    text-align:center!important;
+}
+.hero_section img{
+    width:100%;
+}
+.hero_section .header_text_container{
+    padding: 0.01em 16px;
+    color:white;
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+}
+.hero_section .header_text_container h2,
+.hero_section .header_text_container p{
+    font-family: 'Glegoo', sans-serif !important;
+}
+@media (max-width:768px){
+    .hero_section .header_text_container{
+        padding-top:24px!important;
+        padding-bottom:24px!important;
+    }
+}
+
+
+/* Styling for the Information sections */
+.info_section{
+    text-align:center!important;
+    padding: 0.01em 16px;
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.info_section h2 {
+    font-family: 'Glegoo', sans-serif !important;
+    letter-spacing:4px;
+}
+.info_section p {
+    font-family: 'Glegoo', sans-serif !important;
+    /*text-align:justify !important;*/
+}
+.info_section ul {
+    font-family: 'Glegoo', sans-serif !important;
+    text-align:justify !important;
+}
+/* Styling for the What We Offer section */
+.info_section .boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.info_section .boxes .info_box {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    background-color: inherit;
+    color: white;
+    font-size: 2rem;
+    perspective: 1000px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    border: 3px solid #8c95ad;
+    border-radius: 10px;
+}
+.info_box:hover .flip_card_dynamic{
+    transform: rotateY(180deg);
+}
+.info_box .flip_card_dynamic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip_card_front, .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/* Style the front side of the flip card */
+.flip_card_front {
+    background-color: #8c95ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip_card_front p{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.flip_card_front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* Style the back side of the flip card */
+.flip_card_back {
+    background-color: rgb(212, 219, 228);
+    transform: rotateY(180deg);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+}
+.flip_card_back p{
+    color: black;
+    font-size: 10px;
+    text-align: center !important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+@media (max-width:768px){
+    .info_section{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media (max-width:1024px){
+    .flip_card_back p{
+        font-size: 8px;
+    }
+}
+
+
+/* Styling for contact form */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    font-family: 'Glegoo', sans-serif;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical /* Allow the user to vertically resize the text area (not horizontally) */
+}
+/* Style the submit button */
+input[type=submit] {
+    background-color: rgb(70, 115, 145);
+    color: white;
+    font-family: 'Glegoo', sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #ccc;
+    color:black;
+} 
+/* Add a background color and some padding around the form */
+.form_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Glegoo', sans-serif;
+}
+
+
+/* Styling for the Footer */
+.footer_section{
+    padding:0.01em 16px;
+    text-align:center!important;
+    background-color: rgb(70, 115, 145);
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+    opacity: 0.60;
+    display:block;
+}
+.footer_section p{
+    font-family: 'Glegoo', sans-serif; 
+    font-size:15px; 
+    color:white; 
+    font-weight:700; 
+    text-shadow: 1px 1px 0 black;
+}
