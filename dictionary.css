@@ -1,0 +1,245 @@
+/* CSS for dictionary.js */
+
+/* Style for the results container */
+.dictionaryresult {
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px #242424 solid;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 5px 5px #ebebeb;
+}
+
+/* Heading for each result */
+.dictionaryresult h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Styling for related words button */
+.relatedWordsBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ebebeb;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px #242424 solid;
+  font-family: 'Glegoo', sans-serif;
+  white-space: nowrap;
+  /* display: inline-block;
+  text-align: center; */
+}
+
+.relatedWordsBtn:hover {
+  background-color: #dadada;
+}
+
+#autocomplete {
+  position: absolute;
+  max-height: 200px;
+  max-width: 400px;
+  min-width: 200px;
+  padding: 4px 8px;
+  z-index: 20;
+  background: white;
+  outline: 2px solid var(--brown4,brown);
+  overflow-y: scroll;
+}
+#autocomplete p {
+  padding: 4px 0;
+  cursor: pointer;
+}
+#autocomplete p:hover {
+  background: var(--gold2,beige);
+}
+#display-result {
+  padding-top: 8px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+/* CSS for dictionary.html */
+
+/* General Styling */
+html{
+  box-sizing:border-box;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+}
+body{
+  margin:0;
+  line-height:1.5;
+  font-size:15px;
+}
+h2{
+  font-size:30px;
+  font-weight:400;
+  margin:10px 0;
+}
+img{
+  border-style:none;
+  vertical-align:middle;
+}
+a {
+  background-color:transparent;
+  color:inherit;
+}
+input {
+  font:inherit;
+  margin:0;
+  overflow:visible;
+}
+
+/* Styling for the Navigation Bar */
+.navbar{
+  position:fixed;
+  width:100%;
+  z-index:1;
+  top:0;
+  color:white;
+  font-family: 'Glegoo', sans-serif;
+  background-color:rgb(70, 115, 145); 
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
+}
+.navbar .bar{
+  width:100%;
+  display:inline-block;
+}
+.button{
+  border:none;
+  display:inline-block;
+  padding:12px 24px!important;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.button:hover{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+  color:#000!important;
+  background-color:#ccc!important;
+}
+
+
+/* Styling for Main Content */
+.content{
+  margin-left:auto;
+  margin-right:auto;
+  max-width:2000px;
+  margin-top:46px;
+  font-family: 'Glegoo', sans-serif !important;
+}
+
+
+/*page title / heading*/
+.pagetitle {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 15px rgb(166, 187, 208);
+}
+
+
+/*container for the dictionary*/
+.search_container {
+  margin-top: 16px;
+  background-color: rgb(179, 226, 255);
+  margin-left: 11%;
+  margin-right:11%;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 60px;
+  box-shadow: 5px 10px #ebebeb;
+  text-align:center!important;
+  padding: 0.01em 16px;
+}
+/*search box conatiner*/
+.searchtitle {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgb(96, 97, 98);
+}
+/*container with input and switch symbol*/
+.subform {
+  position: relative;
+  padding-bottom: 8px;
+  text-align: center;
+}
+/*symbol for switching between languages*/
+.subform > i{
+  color:rgb(147, 147, 147);
+  margin-left: 10px;
+  text-shadow: 0px 0px 10px rgb(252, 252, 252);
+}
+.hidden_content{
+  display:none!important;
+} 
+#cayToEngDiv.shown_content, #engToCayDiv.shown_content {
+  display: block !important;
+}
+/*input box for the search bar*/
+.textinput {
+  border-radius: 10px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 2px #ffffff solid;
+  box-shadow: 5px 5px #ebebeb;
+  width: 90%;
+  text-shadow: 0px 0px 10px rgb(226, 226, 226);
+  height: 40px;
+}
+#wholeWordsLabel {
+  font-family: 'Glegoo', sans-serif;
+  font-size: .8rem;
+}
+
+
+/*paragraph with details about the dictionary*/
+.dictp {
+  padding-bottom: 8px;
+  padding-left:11%;
+  padding-right:11%;
+}
+
+
+/* Styling for the Footer */
+.footer_section{
+  margin-top: 60px;
+  padding:0.01em 16px;
+  text-align:center!important;
+  background-color: rgb(70, 115, 145);
+  padding-top:32px!important;
+  padding-bottom:32px!important;
+  opacity: 0.60;
+  display:block;
+}
+.footer_section p{
+  font-family: 'Glegoo', sans-serif; 
+  font-size:15px; 
+  color:white; 
+  font-weight:700; 
+  text-shadow: 1px 1px 0 black;
+}

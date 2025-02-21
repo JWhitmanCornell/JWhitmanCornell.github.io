@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--DICTIONARY PAGE-->
+<html>
+
+  <head>
+    <title>Cayuga-English Dictionary | Gayogo&#817;ho&#769;:n&#491;&#704; Language at Cornell University</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS for dictionary page-->
+    <link rel="stylesheet" href="dictionary.css" media="all">
+
+    <!--Font info-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96636df743.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="bar">
+        <a href="index.html" class="bar_item button">HOME</a>
+        <a href="#" class="bar_item button">DICTIONARY</a>
+        <a href="about_us.html" class="bar_item button">ABOUT US</a>
+        <a href="resources.html" class="bar_item button">RESOURCES</a>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="content">
+      <p class="pagetitle">English &#8596; Gayogohó:nǫ Dictionary</p>
+      <div class="search_container">
+        <form>
+          <p class="searchtitle">Search</p>
+          <!--Gayogohó:nǫˀ to English-->
+          <div class="subform shown_content" id="cayToEngDiv">
+            <input tabindex="-1" class="textinput" id="cayToEng" placeholder=" Enter text to translate from Gayogohó:nǫˀ to English">
+            <i class="fa-solid fa-right-left" onclick="dictFunction()"></i>
+          </div>
+          <!--English to Gayogohó:nǫˀ-->
+          <div class="subform hidden_content" id="engToCayDiv">
+            <input tabindex="-1" class="textinput" id="engToCay" placeholder=" Enter text to translate from English to Gayogohó:nǫˀ">
+            <i class="fa-solid fa-right-left" onclick="dictFunction()"></i>
+            <br/><input type="checkbox" id="wholeWords" value="wholeWords"><label for="wholeWords" id="wholeWordsLabel"> whole words only</label>
+          </div>
+          <div id="display-result"></div>
+        </form>
+      </div>
+      <!--Text about the dictionary-->
+      <p class="dictp">This dictionary is a work in progress.</p>
+      <p class="dictp">Diacritics: At the moment, our dictionary does not include accents and underlines.  You can include these in your search; they&apos;ll simply be ignored.  If your search includes other diacritics (&#281;, &#491;, :, or &#704;), then only exact matches for those will be returned.  If your search does not include diacritics, then results with any diacritics will also be returned.  (For example, a search of &quot;hono&quot; could return words containing &quot;ho:no,&quot; &quot;hon&#491;,&quot; etc.)</p>
+      <p class="dictp">Related words: The &quot;related words&quot; searches may not always accurately identify the stems of words.  This means that some results may not actually be related.</p>
+      <p class="dictp">Source: Froman, Frances, Alfred Keye, Lottie Keye &amp; Carrie Joan Dyck. 2002. English-Cayuga/Cayuga-English dictionary = Gayogo&#817;ho:no&#808;ʼ / Hnyo&#817;ʼohneha:ʼ Wade&#808;we&#808;naga:da:s ohyadohsro&#808;:do&#769;ʼ. Toronto; Buffalo: University of Toronto Press.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer_section">
+      <p>Effort of Cornell University College of Arts and Sciences Linguistics Department.</p>
+    </footer>
+
+    <!-- Javascript for dictionary page -->
+    <script src="dictionary.js"></script>
+
+  </body>
+</html>
