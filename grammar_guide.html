@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--GRAMMAR GUIDE PAGE-->
+<html lang="en">
+  
+<head>
+  <title>Gayogo&#817;ho:n&#491;&#704; Language at Cornell University</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--CSS for resources page-->
+  <link rel="stylesheet" href="resources.css" media="all">
+
+  <!--Font info-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Safari Favicon-->
+  <link rel="icon" href="img/cayuga_logo.png">
+
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("navLinks");
+      menu.classList.toggle("active");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="bar">
+      <a href="index.html" class="bar_item button">HOME</a>
+      <a href="dictionary.html" class="bar_item button">DICTIONARY</a>
+      <a href="about_us.html" class="bar_item button">ABOUT US</a>
+      <a href="resources.html" class="bar_item button">RESOURCES</a>
+      <a href="javascript:void(0);" class="menu_icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <div id="navLinks" class="nav_links">
+      <a href="index.html">HOME</a>
+      <a href="dictionary.html">DICTIONARY</a>
+      <a href="about_us.html">ABOUT US</a>
+      <a href="resources.html">RESOURCES</a>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- Header With Image -->
+    <div class="hero_section">
+      <img src="img/resources-image.png">
+      <div class="header_text_container">
+        <h2>Language & Learning Resources</h2>
+        <p><b>Explore guides, tools, and references to deepen your understanding of Gayogo&#817;ho:n&#491;&#704;.</b></p>   
+      </div>
+    </div>
+
+    <div class="resource-title">
+      <p>Grammar Guide</p>
+    </div>
+    <section class="learning-tools">
+      <div class="tool-container">
+        <object class="pdf" 
+            data="resources/Spelling-Manual.pdf"
+            width="800"
+            height="840">
+    </object>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <p>Effort of Cornell University College of Arts and Sciences Linguistics Department.</p>
+  </footer>
+
+</body>
+
+</html>

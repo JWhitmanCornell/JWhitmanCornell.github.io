@@ -3,7 +3,7 @@
 <html>
 
   <head>
-    <title>Cayuga-English Dictionary | Gayogo&#817;ho&#769;:n&#491;&#704; Language at Cornell University</title>
+    <title>Gayogo&#817;ho:n&#491;&#704; Language at Cornell University</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,6 +18,13 @@
 
     <!--Safari Favicon-->
     <link rel="icon" href="img/cayuga_logo.png">
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("navLinks");
+        menu.classList.toggle("active");
+      }
+    </script>
   </head>
 
   <body>
@@ -28,23 +35,30 @@
         <a href="#" class="bar_item button">DICTIONARY</a>
         <a href="about_us.html" class="bar_item button">ABOUT US</a>
         <a href="resources.html" class="bar_item button">RESOURCES</a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="toggleMenu()">&#9776;</a>
+      </div>
+      <div id="navLinks" class="nav_links">
+        <a href="index.html">HOME</a>
+        <a href="#">DICTIONARY</a>
+        <a href="about_us.html">ABOUT US</a>
+        <a href="resources.html">RESOURCES</a>
       </div>
     </div>
 
     <!-- Search -->
     <div class="content">
-      <p class="pagetitle">English &#8596; Gayogohó:nǫ Dictionary</p>
+      <p class="pagetitle">English &#8596; Gayogo&#817;ho:n&#491;&#704; Dictionary</p>
       <div class="search_container">
         <form>
           <p class="searchtitle">Search</p>
           <!--Gayogohó:nǫˀ to English-->
           <div class="subform shown_content" id="cayToEngDiv">
-            <input tabindex="-1" class="textinput" id="cayToEng" placeholder=" Enter text to translate from Gayogohó:nǫˀ to English">
+            <input tabindex="-1" class="textinput" id="cayToEng" placeholder=" Enter text to translate from Gayogo&#817;ho:n&#491;&#704; to English">
             <i class="fa-solid fa-right-left" onclick="dictFunction()"></i>
           </div>
           <!--English to Gayogohó:nǫˀ-->
           <div class="subform hidden_content" id="engToCayDiv">
-            <input tabindex="-1" class="textinput" id="engToCay" placeholder=" Enter text to translate from English to Gayogohó:nǫˀ">
+            <input tabindex="-1" class="textinput" id="engToCay" placeholder=" Enter text to translate from English to Gayogo&#817;ho:n&#491;&#704;">
             <i class="fa-solid fa-right-left" onclick="dictFunction()"></i>
             <br/><input type="checkbox" id="wholeWords" value="wholeWords"><label for="wholeWords" id="wholeWordsLabel"> whole words only</label>
           </div>
